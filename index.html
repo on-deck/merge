@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merge Club - Microgrant recipients working on big ideas</title>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Merge Club">
+    <meta name="twitter:description" content="We&apos;re a club for microgrant recipients working on big ideas.">
+    <meta name="twitter:image" content="http://merge.club/merge.webp">
+    <meta name="twitter:url" content="https://merge.club/">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://merge.club/">
+    <meta property="og:title" content="Merge Club">
+    <meta property="og:description" content="We&apos;re a club for microgrant recipients working on big ideas..">
+    <meta property="og:image" content="https://merge.club/merge.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Karla', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        .carousel-container {
+            overflow: hidden;
+            position: relative;
+        }
+        .carousel {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .carousel-item {
+            flex: 0 0 400px;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body class="bg-white font-sans text-gray-900 leading-relaxed">
+    <nav class="bg-black text-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="font-bold text-xl">Merge Club</span>
+                </div>
+                <!-- Desktop menu -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="https://merge.club/guide" class="text-white hover:text-gray-300" target="_blank">Grant Guide</a>
+                    <a href="https://merge.club/fund" class="text-white hover:text-gray-300" target="_blank">Merge Grant</a>
+                    <a href="https://airtable.com/appHaOk5VRk50CpcF/pagCmtU8o3Zgl5Lzs/form" class="bg-white text-black px-4 py-2 hover:bg-gray-200 transition duration-300" target="_blank">Apply</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-white focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="https://merge.club/guide" class="block text-white hover:text-gray-300 py-2" target="_blank">Grant Guide</a>
+                <a href="https://merge.club/fund" class="block text-white hover:text-gray-300 py-2" target="_blank">Merge Grant</a>
+                <a href="https://airtable.com/appHaOk5VRk50CpcF/pagCmtU8o3Zgl5Lzs/form" class="block bg-white text-black px-4 py-2 hover:bg-gray-200 transition duration-300" target="_blank">Apply</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative pt-16 bg-black text-white">
+        <div class="max-w-5xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl sm:text-5xl font-bold mb-4 tracking-tight">We're a club for microgrant recipients working on big ideas.</h1>
+                <p class="text-lg sm:text-xl text-gray-300 mb-8 max-w-2xl mx-auto">Accelerate your project with a community of cracked builders.</p>
+                <div class="space-y-4">
+                    <a href="https://airtable.com/appHaOk5VRk50CpcF/pagCmtU8o3Zgl5Lzs/form" class="inline-block bg-white text-black font-semibold py-2 px-6 text-base" target="_blank">Apply Now</a>
+                    <p class="text-sm text-gray-300">
+                        <a href="https://airtable.com/appHaOk5VRk50CpcF/pagLXf1OzDFSnyykG/form" class="font-semibold text-white underline" target="_blank">Need your first Microgrant? Join LFG</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
+        <section class="grid md:grid-cols-3 gap-8 mb-16">
+            <div class="border border-gray-200 p-6 flex flex-col">
+                <h2 class="text-xl font-bold mb-3 text-black flex-grow">Find the world's most promising people</h2>
+                <p class="text-gray-600 text-sm">Apply to join our club of early-stage innovators working on projects from drone swarms to non-invasive bioimaging. Learn, share, and connect with like-minded individuals.</p>
+            </div>
+            <div class="border border-gray-200 p-6 flex flex-col">
+                <h2 class="text-xl font-bold mb-3 text-black flex-grow">Accomplish more with perks</h2>
+                <p class="text-gray-600 text-sm">Access our curated collection of discounts for essential services. Enjoy top-tier perks for AWS, Vercel, Notion, Stripe Atlas, and many more to boost your project.</p>
+            </div>
+            <div class="border border-gray-200 p-6 flex flex-col">
+                <h2 class="text-xl font-bold mb-3 text-black flex-grow">Your support group</h2>
+                <p class="text-gray-600 text-sm">Participate in our bi-monthly Show & Tell + Support sessions. Demo your project, get feedback, and then share what you're working through with others and get their thoughts.</p>
+            </div>
+        </section>
+
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 text-center">What your new friends are up to</h2>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-item bg-black text-white p-6 flex">
+                        <img src="rayan.jpg" alt="Rayan Alyousef" class="w-24 h-24 object-cover mr-4">
+                        <div>
+                            <h3 class="font-bold mb-1">Rayan Alyousef</h3>
+                            <p class="text-sm mb-2">1517 Fund | Nuclear Component Sourcing</p>
+                            <p class="text-sm italic">"Love the Merge community. Insane how fast it&apos;s grown"</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item bg-black text-white p-6 flex">
+                        <img src="prabhjot.jpg" alt="Prabhjot Sodhi" class="w-24 h-24 object-cover mr-4">
+                        <div>
+                            <h3 class="font-bold mb-1">Prabhjot Sodhi</h3>
+                            <p class="text-sm mb-2">Blackbird | Dietary Restriction Nutrition App</p>
+                            <p class="text-sm italic">"Theia Gabatan encouraged protostars recipients to apply for Merge Club, so shoutout to her for connecting us!"</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item bg-black text-white p-6 flex">
+                        <img src="andrew.jpg" alt="Andrew Nijmeh" class="w-24 h-24 object-cover mr-4">
+                        <div>
+                            <h3 class="font-bold mb-1">Andrew Nijmeh</h3>
+                            <p class="text-sm mb-2">Emergent Ventures | AI Transportation Optimization</p>
+                            <p class="text-sm italic">"Find people like you, join something like Merge. There are a lot of really smart kids. "</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item bg-black text-white p-6 flex">
+                        <img src="ibraheem.jpg" alt="Ibraheem Razouki" class="w-24 h-24 object-cover mr-4">
+                        <div>
+                            <h3 class="font-bold mb-1">Ibraheem Razouki</h3>
+                            <p class="text-sm mb-2">Ashoka Changemakers | Youth-led refugee non-profit</p>
+                            <p class="text-sm italic">"Super excited and honored to be a part of such an ambitious and inspiring community of fellow creators!"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="border border-gray-200 p-8 max-w-2xl mx-auto">
+            <h2 class="text-2xl font-bold mb-6 text-center">Community Updates</h2>
+            <ul class="space-y-4">
+                <li class="flex items-start">
+                    <span class="text-black font-semibold mr-3 text-sm w-14 flex-shrink-0">6/5/24:</span>
+                    <span class="text-gray-700 text-sm">Ivoine received $10k follow-on funding from Emergent Ventures</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-black font-semibold mr-3 text-sm w-14 flex-shrink-0">6/1/24:</span>
+                    <span class="text-gray-700 text-sm">Yash won a $200k Presidential Scholarship</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-black font-semibold mr-3 text-sm w-14 flex-shrink-0">5/27/24:</span>
+                    <span class="text-gray-700 text-sm">Alexa has been accepted to Columbia University</span>
+                </li>
+            </ul>
+        </section>
+
+        <section class="mt-24 mb-8">
+            <div class="flex flex-col md:flex-row md:space-x-8">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h2 class="text-2xl font-bold mb-4">Get Involved</h2>
+                    <p class="text-gray-600 mb-8">
+                        Received a grant? Apply to join Merge. Want to start your own microgrant program? We can help. Looking for grants? Apply to LFG.
+                    </p>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="grid grid-cols-1 gap-4">
+                        <a href="https://merge.club/guide" class="block text-center bg-black text-white font-semibold py-3 px-6 hover:bg-gray-800 transition duration-300" target="_blank">
+                            Grant Guide
+                        </a>
+                        <a href="https://merge.club/fund" class="block text-center bg-black text-white font-semibold py-3 px-6 hover:bg-gray-800 transition duration-300" target="_blank">
+                            Merge Grant
+                        </a>
+                        <a href="mailto:aridutilh@beondeck.com?subject=I%20want%20to%20start%20a%20microgrant%20program&body=tell%20me%20what%20you're%20thinking%20and%20we'll%20help%20out!%20" class="block text-center bg-black text-white font-semibold py-3 px-6 hover:bg-gray-800 transition duration-300">
+                            Start a microgrant
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black text-white py-12 mt-16">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <img src="Slope Logo Design favicon (2).png" alt="Merge Club Logo" class="h-8 w-auto mr-3">
+                        <h3 class="text-base font-semibold">Merge Club</h3>
+                    </div>
+                    <div class="text-sm text-gray-300">
+                        San Francisco, USA
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-base font-semibold mb-3">Community</h3>
+                    <ul class="space-y-2">
+                        <li><a href="https://beondeck.com" class="text-sm text-gray-300 hover:text-white transition-colors duration-300">ODF</a></li>
+                        <li><a href="https://builderswho.run" class="text-sm text-gray-300 hover:text-white transition-colors duration-300">Builders Who Run</a></li>
+                        <li><a href="https://landing.club" class="text-sm text-gray-300 hover:text-white transition-colors duration-300">Landing Club</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-base font-semibold mb-3">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="https://merge.club/guide" class="text-sm text-gray-300 hover:text-white transition-colors duration-300">Grant Guide</li>
+                        <li><a href="https://mergeclub.substack.com/podcast" class="text-sm text-gray-300 hover:text-white transition-colors duration-300">Podcast</a></li>
+                        <li><a href="https://airtable.com/appHaOk5VRk50CpcF/pagLXf1OzDFSnyykG/form" class="text-sm text-gray-300 hover:text-white transition-colors duration-300">Looking For Grants</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-base font-semibold mb-3">Get involved</h3>
+                    <ul class="space-y-2">
+                        <li><a href="https://airtable.com/appHaOk5VRk50CpcF/pagCmtU8o3Zgl5Lzs/form" class="text-sm text-gray-300 hover:text-white transition-colors duration-300">Apply to Merge</a></li>
+                        <li><a href="mailto:aridutilh@beondeck.com?subject=I%20want%20to%20start%20a%20microgrant%20program&body=tell%20me%20what%20you're%20thinking%20and%20we'll%20help%20out!%20" class="text-sm text-gray-300 hover:text-white transition-colors duration-300">Start your own microgrant</a></li>
+                        <li><a href="https://airtable.com/appHaOk5VRk50CpcF/pagLXf1OzDFSnyykG/form" class="text-sm text-gray-300 hover:text-white transition-colors duration-300">Looking for Grants</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center">
+                <p class="text-sm text-gray-400">&copy; 2024 Merge Club. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            var mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const carousel = document.querySelector('.carousel');
+            const items = document.querySelectorAll('.carousel-item');
+            let currentIndex = 0;
+
+            // Clone the items and append them to the carousel
+            items.forEach(item => {
+                const clone = item.cloneNode(true);
+                carousel.appendChild(clone);
+            });
+
+            function moveCarousel() {
+                currentIndex++;
+                updateCarousel();
+            }
+
+            function updateCarousel() {
+                const itemWidth = items[0].offsetWidth + 20; // 20px is the margin-right
+                const totalWidth = itemWidth * items.length;
+                
+                if (currentIndex >= items.length) {
+                    currentIndex = 0;
+                }
+                
+                const newTransform = -currentIndex * itemWidth;
+                carousel.style.transform = `translateX(${newTransform}px)`;
+            }
+
+            // Set an interval to move the carousel every 3 seconds
+            setInterval(moveCarousel, 3000);
+        });
+    </script>
+</body>
+</html>
+
