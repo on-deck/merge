@@ -31,19 +31,30 @@
         }
     </script>
     <style>
-        .carousel-container {
-            overflow: hidden;
-            position: relative;
-        }
-        .carousel {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-            animation: carousel 10s linear infinite;
-        }
-        .carousel-item {
-            flex: 0 0 400px;
-            margin-right: 20px;
-        }
+.carousel-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    animation: carousel 20s linear infinite; /* Increased from 10s to 20s */
+}
+
+.carousel-item {
+    flex: 0 0 400px;
+    margin-right: 20px;
+}
+
+@keyframes carousel {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
 
     </style>
 </head>
