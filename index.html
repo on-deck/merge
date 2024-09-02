@@ -300,4 +300,21 @@
             }
 
             function updateCarousel() {
-                const itemWidth = items[0].offsetWidth + 20
+                const itemWidth = items[0].offsetWidth + 20; // 20px is the margin-right
+                const totalWidth = itemWidth * items.length;
+                
+                if (currentIndex >= items.length) {
+                    currentIndex = 0;
+                }
+                
+                const newTransform = -currentIndex * itemWidth;
+                carousel.style.transform = `translateX(${newTransform}px)`;
+            }
+
+            // Set an interval to move the carousel every 3 seconds
+            setInterval(moveCarousel, 3000);
+        });
+    </script>
+</body>
+</html>
+

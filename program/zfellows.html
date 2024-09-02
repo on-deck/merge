@@ -156,4 +156,21 @@
                   document.getElementById('popup-content').innerHTML = html;
                   document.getElementById('popup-modal').style.display = 'block';
                   document.body.style.overflow = 'hidden'; // Prevent scrolling on the main page
-       
+              })
+              .catch(error => console.error('Error loading popup content:', error));
+      }
+
+      function closePopup() {
+          document.getElementById('popup-modal').style.display = 'none';
+          document.body.style.overflow = ''; // Restore scrolling on the main page
+      }
+
+      // Close the modal if clicked outside the content
+      window.onclick = function(event) {
+          if (event.target == document.getElementById('popup-modal')) {
+              closePopup();
+          }
+      }
+  </script>
+</body>
+</html>
