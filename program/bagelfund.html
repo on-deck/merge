@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-NPLDCLSX');</script>
-    <!-- End Google Tag Manager -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3TV8VYF8WH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3TV8VYF8WH');
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bagel Fund - Grant Guide by Merge Club</title>
@@ -148,21 +150,4 @@
                   document.getElementById('popup-content').innerHTML = html;
                   document.getElementById('popup-modal').style.display = 'block';
                   document.body.style.overflow = 'hidden'; // Prevent scrolling on the main page
-              })
-              .catch(error => console.error('Error loading popup content:', error));
-      }
-
-      function closePopup() {
-          document.getElementById('popup-modal').style.display = 'none';
-          document.body.style.overflow = ''; // Restore scrolling on the main page
-      }
-
-      // Close the modal if clicked outside the content
-      window.onclick = function(event) {
-          if (event.target == document.getElementById('popup-modal')) {
-              closePopup();
-          }
-      }
-  </script>
-</body>
-</html>
+       
